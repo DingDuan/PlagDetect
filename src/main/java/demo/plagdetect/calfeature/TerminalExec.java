@@ -3,20 +3,7 @@ package demo.plagdetect.calfeature;
 import java.io.*;
 
 public class TerminalExec {
-//    public static void main(String[] args){
-//        TerminalExec terminalExec = new TerminalExec();
-////        String output = terminalExec.execute("diff /Users/dd/study/iSE/f1.txt /Users/dd/study/iSE/f2.txt");
-////        String[] lines = output.split("\n");
-////        String lastLine = lines[lines.length-1];
-////        String[] items = lastLine.split(" ");
-////        System.out.println(items[0]);
-////        System.out.println(items[1]);
-//        //System.out.println(readConsole());
-//        File oldFile = new File("/Users/dd/study/iSE/f1.txt");
-//        File newFile = new File("/Users/dd/study/iSE/f2.txt");
-//        File compareFile = new File("/Users/dd/study/iSE/out.txt");
-//        terminalExec.runDiff(oldFile,newFile,compareFile);
-//    }
+
 
     /*
      * @Author duanding
@@ -30,7 +17,7 @@ public class TerminalExec {
 
         //oldFileName=(oldFile.getPath()).replace('\\', '/');
         String oldFileName=oldFile.getPath();
-        System.out.println("filename"+oldFileName);
+//        System.out.println("filename"+oldFileName);
         //newFileName=(newFile.getPath()).replace('\\', '/');
         String newFileName=newFile.getPath();
         String[] commands=new String[4];
