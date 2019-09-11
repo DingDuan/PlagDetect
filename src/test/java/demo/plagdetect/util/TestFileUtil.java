@@ -31,7 +31,9 @@ public class TestFileUtil {
      **/
     @Test
     public void testCalculateFileLineFromTargetFile(){
-        File targetFile = new File("/Users/dd/study/iSE/plagiarism_detection/Datalog_clean/2/ValueTest.java");
-        assertEquals(22, FileUtil.calculateFileLineFromTargetFile(targetFile));
+        File targetFile1 = new File("/Users/dd/study/iSE/plagiarism_detection/Datalog_clean/1/ValueTest.java");
+        assertEquals(24, FileUtil.calculateFileLineFromTargetFile(targetFile1));
+        File targetFile2 = new File("/Users/dd/study/iSE/plagiarism_detection/Datalog_clean/2/ValueTest.java");
+        assertEquals(22, FileUtil.calculateFileLineFromTargetFile(targetFile2));
     }
 }
