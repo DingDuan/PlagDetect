@@ -51,4 +51,17 @@ public class TestCalFileSim {
         assertEquals("VariableTest",cid2FileName);
     }
 
+    /**
+     * @Author duanding
+     * @Description 测试遍历文件夹比较文件，输出diff文件
+     * @Date 3:11 PM 2019/9/12
+     * @Param []
+     * @return void
+     **/
+    @Test
+    public void testTraverseDirectoryRunDiff(){
+        File Directory = new File("/Users/dd/study/iSE/plagiarism_detection/Datalog_clean");
+        CalFileSim.traverseDirectoryRunDiff(Directory);
+    }
+
 }
