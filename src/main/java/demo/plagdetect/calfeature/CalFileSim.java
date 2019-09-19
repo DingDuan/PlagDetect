@@ -85,6 +85,7 @@ public class CalFileSim {
                         String cid2FileName = cid2TestFile.getName();
 //                        int trueCid1 = index1+1;
 //                        int trueCid2 = index2+1;
+
                         buffer = new StringBuffer(diffFileRootPath + File.separator
                                 + cid1 + File.separator + cid2 + File.separator + cid1 + "." + cid1FileName
                                 + " vs " + cid2 + "." + cid2FileName + ".txt");
