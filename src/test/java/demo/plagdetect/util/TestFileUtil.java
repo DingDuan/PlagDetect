@@ -36,4 +36,10 @@ public class TestFileUtil {
         File targetFile2 = new File("/Users/dd/study/iSE/plagiarism_detection/Datalog_clean/2/ValueTest.java");
         assertEquals(22, FileUtil.calculateFileLineFromTargetFile(targetFile2));
     }
+
+    @Test
+    public void testCalCodeCharCount(){
+        File targetFile = new File("/Users/dd/Desktop/DemoRuleTest.java");
+        assertEquals(529,FileUtil.calCodeCharCount(targetFile));
+    }
 }
