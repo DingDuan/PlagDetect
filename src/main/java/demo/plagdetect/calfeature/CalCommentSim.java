@@ -70,6 +70,9 @@ public class CalCommentSim {
         TerminalExec terminalExec = new TerminalExec();
         terminalExec.runDiff(commentFile1,commentFile2,compareFile);
         int diffLine = FileUtil.calculateDiffLineFromDiffFile(compareFile);
+        int file1Line = FileUtil.calculateFileLineFromTargetFile(commentFile1);
+        int file2Line = FileUtil.calculateFileLineFromTargetFile(commentFile2);
+        sim = CalFileSim.calculateSimValueByDiff(file1Line,file2Line,diffLine);
         return sim;
     }
 }
