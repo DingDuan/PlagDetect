@@ -22,6 +22,13 @@ public class TestCalCommentSim {
         CalCommentSim.extractCommentToFile(oldFile,commentFile);
     }
 
+    /**
+     * @Author duanding
+     * @Description 测试计算注释相似度
+     * @Date 11:06 AM 2019/9/21
+     * @Param []
+     * @return void
+     **/
     @Test
     public void testCalLineSimByDiff(){
         File commentFile1 = new File("/Users/dd/Desktop/DemoRuleTest_Comment.java");
