@@ -1,22 +1,29 @@
 package demo.plagdetect.calfeature;
 
+import demo.plagdetect.calfeature.model.Num;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class CalNumSim {
 
     /**
      * @Author duanding
-     * @Description 从文件中提取数值变量并排序
+     * @Description 从文件中提取数值变量
      * @Date 5:16 PM 2019/9/23
      * @Param [file]
      * @return void
      **/
-    public static void extractNumAndSortFromFile(File file){
+    public static List extractNumFromFile(File file){
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
+        List<String> strList;
+        List<String> numList = new ArrayList<>();
         try {
             fileReader = new FileReader(file);
             bufferedReader = new BufferedReader(fileReader);
@@ -30,9 +37,15 @@ public class CalNumSim {
                 if (line.trim().length() < 2) {
                     continue;
                 }
-                char firstChar = line.charAt(0);
-                if (firstChar == '-' || firstChar == '+') {
-                    
+                if (line.trim().charAt(0) == '@'){
+                    continue;
+                }
+                strList = Arrays.asList(line.split("[ \\,\\)]"));
+                for(String str : strList){
+                    System.out.println(str);
+                    if(detectNum(str)){
+                        numList.add(str);
+                    }
                 }
             }
         } catch (IOException e) {
@@ -51,6 +64,7 @@ public class CalNumSim {
                 e.printStackTrace();
             }
         }
+        return numList;
     }
 
     /**
