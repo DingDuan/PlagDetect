@@ -10,6 +10,13 @@ import static org.junit.Assert.assertEquals;
 
 public class TestCalNumSim {
 
+    /**
+     * @Author duanding
+     * @Description 测试从文件提取数值常量
+     * @Date 5:30 PM 2019/9/24
+     * @Param []
+     * @return void
+     **/
     @Test
     public void testExtractNumFromFile(){
         File file = new File("/Users/dd/Desktop/TryData/ALUTest1.java");
@@ -39,5 +46,32 @@ public class TestCalNumSim {
         assertEquals(true,CalNumSim.detectNum(s1));
         String s2 = "-0.423";
         assertEquals(true,CalNumSim.detectNum(s2));
+    }
+
+    /**
+     * @Author duanding
+     * @Description 测试根据两个选手数值常量列表计算相似度
+     * @Date 5:31 PM 2019/9/24
+     * @Param []
+     * @return void
+     **/
+    @Test
+    public void testCalNumSim(){
+        List<String> numList1 = new ArrayList();
+        numList1.add("8");
+        numList1.add("8");
+        numList1.add("-5.3");
+        numList1.add("12");
+        numList1.add("3.54");
+        numList1.add("-0.54");
+        numList1.add("0.54");
+        numList1.add("22.54");
+        List<String> numList2 = new ArrayList<>();
+        numList2.add("8");
+        numList2.add("8");
+        numList2.add("8");
+        numList2.add("-0.54");
+        numList2.add("-21");
+        assertEquals(0.375,CalNumSim.calNumSim(numList1,numList2),0.001);
     }
 }

@@ -37,6 +37,13 @@ public class TestFileUtil {
         assertEquals(22, FileUtil.calculateFileLineFromTargetFile(targetFile2));
     }
 
+    /**
+     * @Author duanding
+     * @Description 测试获取文件中代码字符数（去除注释）
+     * @Date 4:01 PM 2019/9/24
+     * @Param []
+     * @return void
+     **/
     @Test
     public void testCalCodeCharCount(){
         File targetFile = new File("/Users/dd/Desktop/DemoRuleTest.java");

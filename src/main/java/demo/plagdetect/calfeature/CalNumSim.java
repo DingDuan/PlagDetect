@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class CalNumSim {
@@ -19,7 +20,7 @@ public class CalNumSim {
      * @Param [file]
      * @return void
      **/
-    public static List extractNumFromFile(File file){
+    public static List<String> extractNumFromFile(File file){
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
         List<String> strList;
@@ -77,5 +78,28 @@ public class CalNumSim {
     public static Boolean detectNum(String str){
         Boolean strResult = str.matches("-?[0-9]+.?[0-9]*");
         return strResult;
+    }
+
+    /**
+     * @Author duanding
+     * @Description 由两个选手的数值常量列表计算相似度
+     * @Date 5:29 PM 2019/9/24
+     * @Param [numList1, numList2]
+     * @return java.lang.Double
+     **/
+    public static Double calNumSim(List<String> numList1,List<String> numList2){
+        double numSim = 0.0;
+        double maxLength = numList1.size();
+        if(numList2.size() > numList1.size()){
+            maxLength = numList2.size();
+        }
+//        //排序，为了后面遍历提高效率
+//        Collections.sort(numList1);
+//        Collections.sort(numList2);
+        numList1.retainAll(numList2);
+//        numList2.retainAll(numList1);
+        double commonLength = numList1.size();
+        numSim = commonLength/maxLength;
+        return numSim;
     }
 }
