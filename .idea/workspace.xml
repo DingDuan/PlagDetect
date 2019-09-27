@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10760155-82ef-41f2-958f-049ccd10825b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalNumSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalNumSim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCodeLengthDiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCodeLengthDiff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalCommentSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalCommentSim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFragAveSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFragAveSim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCommentSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCommentSim.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalFragAveSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalFragAveSim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalNumSim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalNumSim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/plagdetect/util/TestFileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/plagdetect/util/TestFileUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,24 +29,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="31" />
+          <entry key="java" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="31" />
+          <entry key="JAVA" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="5142" />
+          <entry key="java" value="5401" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5142" />
+          <entry key="JAVA" value="5401" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="2" />
         </counts>
@@ -59,20 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFileSim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalNumSim.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="103" column="5" lean-forward="true" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
+            <state relative-caret-position="81">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +68,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalNumSim.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalNumSim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="74" column="73" lean-forward="true" selection-start-line="74" selection-start-column="73" selection-end-line="74" selection-end-column="73" />
+            <state relative-caret-position="585">
+              <caret line="103" column="5" lean-forward="true" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalCommentSim.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="83" column="40" lean-forward="true" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCommentSim.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="36" column="101" selection-start-line="36" selection-start-column="101" selection-end-line="36" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,17 +144,17 @@
         <option value="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestTerminalExec.java" />
         <option value="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalFileSim.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFileSim.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFragAveSim.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalCodeLengthDiff.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/plagdetect/util/FileUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalCommentSim.java" />
-        <option value="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCommentSim.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/model/Num.java" />
-        <option value="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalFragAveSim.java" />
         <option value="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCodeLengthDiff.java" />
         <option value="$PROJECT_DIR$/src/test/java/demo/plagdetect/util/TestFileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalNumSim.java" />
         <option value="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalNumSim.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFragAveSim.java" />
+        <option value="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalFragAveSim.java" />
+        <option value="$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCommentSim.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalCommentSim.java" />
       </list>
     </option>
   </component>
@@ -274,7 +285,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569326137880" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569576615503" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -299,7 +310,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCalNumSim.testCalNumSim">
+  <component name="RunManager" selected="JUnit.TestCalCommentSim.testCalLineSimByDiff">
     <configuration name="TestCalCommentSim.testCalLineSimByDiff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PlagDetect" />
       <extension name="coverage">
@@ -332,6 +343,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCalFragAveSim.testCalAverageSimlarity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PlagDetect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.plagdetect.calfeature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo.plagdetect.calfeature" />
+      <option name="MAIN_CLASS_NAME" value="demo.plagdetect.calfeature.TestCalFragAveSim" />
+      <option name="METHOD_NAME" value="testCalAverageSimlarity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestCalNumSim.testCalNumSim" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PlagDetect" />
       <extension name="coverage">
@@ -343,22 +370,6 @@
       <option name="PACKAGE_NAME" value="demo.plagdetect.calfeature" />
       <option name="MAIN_CLASS_NAME" value="demo.plagdetect.calfeature.TestCalNumSim" />
       <option name="METHOD_NAME" value="testCalNumSim" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCalNumSim.testDetectNum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PlagDetect" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.plagdetect.calfeature.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="demo.plagdetect.calfeature" />
-      <option name="MAIN_CLASS_NAME" value="demo.plagdetect.calfeature.TestCalNumSim" />
-      <option name="METHOD_NAME" value="testDetectNum" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -381,19 +392,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestCalCommentSim.testExtractCommentToFile" />
-      <item itemvalue="JUnit.TestCalCommentSim.testCalLineSimByDiff" />
-      <item itemvalue="JUnit.TestCalNumSim.testDetectNum" />
       <item itemvalue="JUnit.TestCalNumSim.testExtractNumFromFile" />
       <item itemvalue="JUnit.TestCalNumSim.testCalNumSim" />
+      <item itemvalue="JUnit.TestCalFragAveSim.testCalAverageSimlarity" />
+      <item itemvalue="JUnit.TestCalCommentSim.testExtractCommentToFile" />
+      <item itemvalue="JUnit.TestCalCommentSim.testCalLineSimByDiff" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestCalNumSim.testCalNumSim" />
-        <item itemvalue="JUnit.TestCalNumSim.testExtractNumFromFile" />
-        <item itemvalue="JUnit.TestCalNumSim.testDetectNum" />
         <item itemvalue="JUnit.TestCalCommentSim.testCalLineSimByDiff" />
         <item itemvalue="JUnit.TestCalCommentSim.testExtractCommentToFile" />
+        <item itemvalue="JUnit.TestCalFragAveSim.testCalAverageSimlarity" />
+        <item itemvalue="JUnit.TestCalNumSim.testCalNumSim" />
+        <item itemvalue="JUnit.TestCalNumSim.testExtractNumFromFile" />
       </list>
     </recent_temporary>
   </component>
@@ -410,44 +421,44 @@
       <workItem from="1567758601639" duration="7911000" />
       <workItem from="1568015655872" duration="18986000" />
       <workItem from="1568465580584" duration="3464000" />
-      <workItem from="1568717465888" duration="23425000" />
+      <workItem from="1568717465888" duration="26170000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCalNumSim_testDetectNum - 2019.09.23 at 17h 15m 32s.xml">
-      <configuration name="TestCalNumSim.testDetectNum" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testExtractCommentToFile - 2019.09.27 at 17h 05m 03s.xml">
+      <configuration name="TestCalCommentSim.testExtractCommentToFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalNumSim_testDetectNum - 2019.09.23 at 17h 16m 09s.xml">
-      <configuration name="TestCalNumSim.testDetectNum" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testExtractCommentToFile - 2019.09.27 at 17h 13m 20s.xml">
+      <configuration name="TestCalCommentSim.testExtractCommentToFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalNumSim_testExtractNumFromFile - 2019.09.23 at 19h 46m 47s.xml">
-      <configuration name="TestCalNumSim.testExtractNumFromFile" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testExtractCommentToFile - 2019.09.27 at 17h 14m 15s.xml">
+      <configuration name="TestCalCommentSim.testExtractCommentToFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalNumSim_testExtractNumFromFile - 2019.09.23 at 19h 47m 22s.xml">
-      <configuration name="TestCalNumSim.testExtractNumFromFile" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testExtractCommentToFile - 2019.09.27 at 17h 19m 03s.xml">
+      <configuration name="TestCalCommentSim.testExtractCommentToFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalNumSim_testCalNumSim - 2019.09.24 at 19h 02m 18s.xml">
-      <configuration name="TestCalNumSim.testCalNumSim" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testExtractCommentToFile - 2019.09.27 at 17h 23m 06s.xml">
+      <configuration name="TestCalCommentSim.testExtractCommentToFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalNumSim_testCalNumSim - 2019.09.24 at 19h 03m 05s.xml">
-      <configuration name="TestCalNumSim.testCalNumSim" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testCalLineSimByDiff - 2019.09.27 at 17h 27m 10s.xml">
+      <configuration name="TestCalCommentSim.testCalLineSimByDiff" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalNumSim_testCalNumSim - 2019.09.24 at 19h 40m 32s.xml">
-      <configuration name="TestCalNumSim.testCalNumSim" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testCalLineSimByDiff - 2019.09.27 at 17h 27m 56s.xml">
+      <configuration name="TestCalCommentSim.testCalLineSimByDiff" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalNumSim_testCalNumSim - 2019.09.24 at 19h 40m 52s.xml">
-      <configuration name="TestCalNumSim.testCalNumSim" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testExtractCommentToFile - 2019.09.27 at 17h 29m 15s.xml">
+      <configuration name="TestCalCommentSim.testExtractCommentToFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalNumSim_testCalNumSim - 2019.09.24 at 19h 41m 37s.xml">
-      <configuration name="TestCalNumSim.testCalNumSim" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testCalLineSimByDiff - 2019.09.27 at 17h 29m 28s.xml">
+      <configuration name="TestCalCommentSim.testCalLineSimByDiff" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalNumSim_testCalNumSim - 2019.09.24 at 19h 55m 25s.xml">
-      <configuration name="TestCalNumSim.testCalNumSim" configurationId="JUnit" />
+    <history-entry file="TestCalCommentSim_testCalLineSimByDiff - 2019.09.27 at 17h 30m 00s.xml">
+      <configuration name="TestCalCommentSim.testCalLineSimByDiff" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53786000" />
+    <option name="totallyTimeSpent" value="56531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -548,46 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalCommentSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="67" column="41" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCommentSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalFragAveSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFragAveSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="113" column="44" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/demo/plagdetect/util/TestFileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -602,16 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
           <caret line="102" column="52" lean-forward="true" selection-start-line="102" selection-start-column="52" selection-end-line="102" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFileSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -666,10 +627,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalFragAveSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFragAveSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalNumSim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="585">
           <caret line="103" column="5" lean-forward="true" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalFileSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/plagdetect/calfeature/TestCalCommentSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="36" column="101" selection-start-line="36" selection-start-column="101" selection-end-line="36" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/plagdetect/calfeature/CalCommentSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="83" column="40" lean-forward="true" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

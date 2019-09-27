@@ -19,6 +19,6 @@ public class TestCalFragAveSim {
     @Test
     public void testCalAverageSimlarity(){
         List<Double> tfSimValueList = asList(0.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,0.0,100.0,0.0,100.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,100.0,0.0,0.0,0.0,100.0,100.0,0.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,100.0,100.0,100.0,0.0,100.0,100.0,100.0,100.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0);
-        assertEquals(41.82,CalFragAveSim.calAverageSimlarity(tfSimValueList),0.01);
+        assertEquals(100.00,CalFragAveSim.calAverageSimlarity(tfSimValueList),0.01);
     }
 }

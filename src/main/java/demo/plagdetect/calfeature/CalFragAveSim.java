@@ -106,7 +106,7 @@ public class CalFragAveSim {
 
     /**
      * @Author duanding
-     * @Description 计算片段相似度平均值
+     * @Description 计算片段相似度平均值（只考虑都测到的（有相似度的））
      * @Date 8:10 PM 2019/9/19
      * @Param [tfSimValueList]
      * @return double
@@ -114,10 +114,14 @@ public class CalFragAveSim {
     public static double calAverageSimlarity(List<Double> tfSimValueList){
         double average = 0.0;
         double total = 0.0;
+        double length = 0.0;
         for(double simValue : tfSimValueList){
-            total += simValue;
+            if(simValue != 0.0) {
+                total += simValue;
+                length += 1.0;
+            }
         }
-        average = total/tfSimValueList.size();
+        average = total/length;
         return average;
     }
 }

@@ -3,8 +3,12 @@ package demo.plagdetect.calfeature;
 import demo.plagdetect.util.FileUtil;
 
 import java.io.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class CalCommentSim {
+
+    private final static String REGEX_EXTRACT_COMMENT = "\\/\\/[^\\n]*|\\/\\*([^\\*^\\/]*|[\\*^\\/*]*|[^\\**\\/]*)*\\*+\\/";
 
     /**
      * @Author duanding
@@ -24,9 +28,11 @@ public class CalCommentSim {
             fileWriter = new FileWriter(commentFile);
             bufferedWriter = new BufferedWriter(fileWriter);
             String line = "";
+            Pattern pattern = Pattern.compile(REGEX_EXTRACT_COMMENT);
             while ((line = bufferedReader.readLine()) != null) {
                 if (line.trim().length() > 0) {
-                    if(line.trim().charAt(0) == '/' || line.trim().charAt(0) == '*') {
+                    Matcher matcher = pattern.matcher(line.trim());
+                    if(matcher.find() || line.trim().charAt(0) == '/' || line.trim().charAt(0) == '*') {
                         bufferedWriter.write(line);
                         bufferedWriter.newLine();
                     }
@@ -70,8 +76,11 @@ public class CalCommentSim {
         TerminalExec terminalExec = new TerminalExec();
         terminalExec.runDiff(commentFile1,commentFile2,compareFile);
         int diffLine = FileUtil.calculateDiffLineFromDiffFile(compareFile);
+//        System.out.println(diffLine);
         int file1Line = FileUtil.calculateFileLineFromTargetFile(commentFile1);
+//        System.out.println(file1Line);
         int file2Line = FileUtil.calculateFileLineFromTargetFile(commentFile2);
+//        System.out.println(file2Line);
         sim = CalFileSim.calculateSimValueByDiff(file1Line,file2Line,diffLine);
         return sim;
     }
